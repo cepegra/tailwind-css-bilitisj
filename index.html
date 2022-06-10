@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice - formulaire</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        .my-label{
+            @apply block uppercase tracking-wider text-gray-600 text-sm font-bold mt-5 mb-2;
+        }
+        .my-titre{
+            @apply uppercase text-red-400 text-3xl mt-10 border-l-4 border-indigo-200 bg-indigo-50 p-2; 
+        }
+        .my-fieldset{
+            @apply border border-gray-200;
+        }
+        .form{
+            @apply w-fit px-3 mb-6;
+        }
+        .question{
+          @apply mt-9;
+        }
+        .q-n{
+          @apply pb-3 block uppercase tracking-wider text-gray-600 text-sm font-bold;
+        }
+        .reponse{
+          @apply pr-5 pl-2 text-gray-500;
+        }
+        .r-3{
+          @apply font-bold;
+        }
+    </style>
+</head>
+<body>
+    <form class="form" action="">
+        <!------------------ C O N T E X T E --------------->
+        <div class="contexte flex flex-col">
+            <h2 class="my-titre">Contexte</h2>
+            <fieldset>
+                <label class="my-label" for="radio">Date d'entrée</label>
+                <input  class="my-fieldset" type="date" name="" id="" placeholder="jj/mm/aa">
+            </fieldset>
+            <fieldset>
+                <label class="my-label" for="radio">Date de sortie</label>
+                <input class="my-fieldset" type="date" name="" id="" placeholder="jj/mm/aa">
+            </fieldset>
+            <fieldset>
+                <label class="my-label" for="radio">Date du formulaire</label>
+                <input class="my-fieldset" type="date" name="" id="" placeholder="jj/mm/aa">
+            </fieldset>
+        </div>
+
+        <!------------------ C O O R D O N N E E S --------------->
+        <div class="coordonnees flex flex-col">
+            <div class="flex flex-col">
+                <h2 class="my-titre">Coordonnées</h2>
+                <fieldset>
+                    <label class="my-label" for="centr">Centre</label>
+                    <input class="my-fieldset" type="texte" name="centre" id="centre" placeholder="Nom du centre" >
+                </fieldset>
+
+                <fieldset>
+                    <label class="my-label" for="centr">Nom du formateur</label>
+                    <input class="my-fieldset" type="texte" name="teacher" id="teacher-name" >
+                </fieldset>
+                <fieldset>
+                    <label class="my-label" for="centr">Prénom du formateur</label>
+                    <input class="my-fieldset" type="texte" name="teacher" id="teacher-surname" >
+                </fieldset>  
+                
+                <fieldset>
+                    <label class="my-label" for="centr">Nom du stagiaire</label>
+                    <input class="my-fieldset" type="texte" name="student" id="student-name" >
+                </fieldset>
+                <fieldset>
+                    <label class="my-label" for="centr">Prénom du stagiaire</label>
+                    <input class="my-fieldset" type="texte" name="student" id="student-surname" >
+                </fieldset>               
+
+            </div>
+        </div>
+        <!------------------ E V A L U A T I O N --------------->
+        <div class="evaluation flex flex-col">
+                <h2 class="my-titre">Évaluation</h2>
+                <!-- - - - - - -  Question 1 - - - - - - - -->
+                <div class="question">
+                    <p class="q-n">Question 1</p>
+                    <input type="radio" id="rep-1" name="" value="">
+                    <label class="reponse" for="">Réponse 1</label>
+    
+                    <input type="radio" id="rep-2" name="" value="">
+                    <label class="reponse" for="">Réponse 2</label>
+    
+                    <input type="radio" id="rep-3" name="" value="">
+                    <label class="reponse r-3" for="">Réponse 3</label>
+    
+                    <input type="radio" id="rep-4" name="" value="">
+                    <label class="reponse" for="">Réponse 4</label>
+                </div>
+
+                <!-- - - - - - -  Question 2 - - - - - - - -->
+                <div class="question">
+                    <p class="q-n">Question 2</p>
+                    <input type="radio" id="rep-1" name="" value="">
+                    <label class="reponse" for="">Réponse 1</label>
+    
+                    <input type="radio" id="rep-2" name="" value="">
+                    <label class="reponse" for="">Réponse 2</label>
+    
+                    <input type="radio" id="rep-3" name="" value="">
+                    <label class="reponse r-3" for="">Réponse 3</label>
+    
+                    <input type="radio" id="rep-4" name="" value="">
+                    <label class="reponse" for="">Réponse 4</label>
+                </div>
+
+                <!-- - - - - - -  Question 3 - - - - - - - -->
+                <div class="question">
+                    <p class="q-n">Question 3</p>
+                    <input type="radio" id="rep-1" name="" value="">
+                    <label class="reponse" for="">Réponse 1</label>
+    
+                    <input type="radio" id="rep-2" name="" value="">
+                    <label class="reponse" for="">Réponse 2</label>
+    
+                    <input type="radio" id="rep-3" name="" value="">
+                    <label class="reponse r-3" for="">Réponse 3</label>
+    
+                    <input type="radio" id="rep-4" name="" value="">
+                    <label class="reponse" for="">Réponse 4</label>
+                </div>
+
+                <!-- - - - - - -  Question 4 - - - - - - - -->
+                <div class="question">
+                    <p class="q-n">Question 4</p>
+                    <input type="radio" id="rep-1" name="" value="">
+                    <label class="reponse" for="">Réponse 1</label>
+    
+                    <input type="radio" id="rep-2" name="" value="">
+                    <label class="reponse" for="">Réponse 2</label>
+    
+                    <input type="radio" id="rep-3" name="" value="">
+                    <label class="reponse r-3" for="">Réponse 3</label>
+    
+                    <input type="radio" id="rep-4" name="" value="">
+                    <label class="reponse" for="">Réponse 4</label>
+                </div>
+
+                <!-- - - - - - -  Question 5 - - - - - - - -->
+                <div class="question">
+                    <p class="q-n">Question 5</p>
+                    <input type="radio" id="rep-1" name="" value="">
+                    <label class="reponse" for="">Réponse 1</label>
+    
+                    <input type="radio" id="rep-2" name="" value="">
+                    <label class="reponse" for="">Réponse 2</label>
+    
+                    <input type="radio" id="rep-3" name="" value="">
+                    <label class="reponse r-3" for="">Réponse 3</label>
+    
+                    <input type="radio" id="rep-4" name="" value="">
+                    <label class="reponse" for="">Réponse 4</label>
+                </div>
+
+                <!-- - - - - - -  Question 6 - - - - - - - -->
+                <div class="question">
+                    <p class="q-n">Question 6</p>
+                    <input type="radio" id="rep-1" name="" value="">
+                    <label class="reponse" for="">Réponse 1</label>
+    
+                    <input type="radio" id="rep-2" name="" value="">
+                    <label class="reponse" for="">Réponse 2</label>
+    
+                    <input type="radio" id="rep-3" name="" value="">
+                    <label class="reponse r-3" for="">Réponse 3</label>
+    
+                    <input type="radio" id="rep-4" name="" value="">
+                    <label class="reponse" for="">Réponse 4</label>
+                </div>
+        </div>
+    </form>
+
+    <script src=”main.js”></script>
+</body>
+</html>
